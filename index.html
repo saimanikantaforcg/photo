@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoMarket - Photographers Marketplace</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">PhotoMarket</h1>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#photographers" class="nav-link">Photographers</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Find Your Perfect <span class="highlight">Photographer</span></h1>
+            <p>Connect with talented photographers for weddings, events, portraits, and more</p>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by location, specialty, or name...">
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filters">
+        <div class="container">
+            <h3>Filter Photographers</h3>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="event">Event</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photographers Section -->
+    <section id="photographers" class="photographers-section">
+        <div class="container">
+            <h2>Featured Photographers</h2>
+            <div class="photographers-grid" id="photographersGrid">
+                <!-- Photographer cards will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About PhotoMarket</h2>
+            <p>PhotoMarket is a premier platform connecting clients with professional photographers. Whether you need wedding photography, corporate headshots, or artistic portraits, we help you find the perfect match for your vision and budget.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Professional Photographers</p>
+                </div>
+                <div class="stat">
+                    <h3>10,000+</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat">
+                    <h3>25+</h3>
+                    <p>Cities Covered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 PhotoMarket. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Photographer Modal -->
+    <div id="photographerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent">
+                <!-- Modal content will be dynamically generated -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
